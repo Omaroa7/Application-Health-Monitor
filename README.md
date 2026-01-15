@@ -1,5 +1,5 @@
 # Application-Health-Monitor
-Entry-level Linux Project covering Application Health monitorinh
+Entry-level Linux Project covering Application Health monitoring
 This Project documents hands on Linux pracic 
 ## Environment 
 - Linux (Ubuntu)
