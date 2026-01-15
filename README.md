@@ -46,3 +46,10 @@ echo >> report.txt
 
 
 echo "Service status:" >> report.txt
+
+if systemctl is-active --quiet ssh; then
+echo "SSH service: RUNNING" >> report.txt
+else
+echo "SSH service: NOT RUNNING" >> report.txt
+fi
+
