@@ -14,13 +14,13 @@ echo "" >> report.txt
 
 echo "CPU usage" >> report.txt
 top -bn1 | head -n 5 >> report.txt
-echo >> report.txt
+echo "" >> report.txt
 
 disk_usage=$(df / | tail -1 | awk '{print $5}' | tr -d '%')
 echo "Disk health check:" >> report.txt
 
 if [ "$disk_usage" -gt 80 ]; then
-  echo "WARNING: Disk usage is high ($disk_usage%)" >> report.t
+  echo "WARNING: Disk usage is high ($disk_usage%)" >> report.txt
 else
   echo "OK: Disk usage is healthy ($disk_usage%)" >> report.txt
 fi
